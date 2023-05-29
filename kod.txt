@@ -1,0 +1,3 @@
+SELECT filtre, sanzuman, motor
+FROM araba_malzeme
+WHERE condition;
