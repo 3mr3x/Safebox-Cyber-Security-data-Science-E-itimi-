@@ -4,8 +4,11 @@ from pymongo import MongoClient
 # Flask uygulamasını oluşturma
 app = Flask(__name__)
 
-# MongoDB bağlantısı
-client = MongoClient('mongodb+srv://<mongodb_connection_string>')
+# MongoDB'ye bağlan
+client = MongoClient('mongodb://localhost:27017')
+db = client['flaskmongodb']
+collection = db['Users']
+
 
 # Veritabanı ve koleksiyon seçimi
 db = client.flaskmongodb
